@@ -51,12 +51,21 @@
 
         .section-padding { padding: 80px 0; }
         .feature-card { border: none; transition: 0.3s; height: 100%; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .feature-card:hover { transform: translateY(-5px); }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
         
+        /* Why Choose Us Icons */
+        .choose-icon { font-size: 40px; color: var(--primary-color); margin-bottom: 20px; }
+        
+        /* Review Styling */
+        .review-card { background: white; border-radius: 15px; padding: 30px; border: none; height: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .stars { color: #ffc107; margin-bottom: 10px; }
+        .reviewer-name { font-weight: 600; margin-top: 15px; display: block; }
+        .reviewer-loc { font-size: 0.85rem; color: #6c757d; }
+
         .spec-list li { margin-bottom: 10px; display: flex; align-items: center; }
         .spec-list i { color: var(--primary-color); margin-right: 10px; }
 
-        .location-map iframe { width: 100%; border-radius: 15px; height: 400px; }
+        .location-map iframe { width: 100%; border-radius: 15px; height: 400px; border: none; }
     </style>
 </head>
 <body>
@@ -87,7 +96,8 @@
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why-choose-us">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item ms-lg-3"><a href="tel:7972908465" class="btn btn-primary rounded-pill px-4">Instant Quote</a></li>
                 </ul>
@@ -122,8 +132,8 @@
                     <img src="birdnet-small.jpg" alt="Bird Netting on Balcony" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <h2 class="fw-bold text-primary mb-3">Bird Net Service Pune | Pigeon Net For Balcony | Anti Pigeon Net Pune</h2>
-                    <p class="lead text-dark">Bird Net Service Pune provides Pigeon Netting Services with a reliable solution to keep Pigeon and any other birds away from your outdoor space, creating a peaceful environment without losing views or airflow.</p>
+                    <h2 class="fw-bold text-primary mb-3">Bird Net Service Pune | Pigeon Net For Balcony</h2>
+                    <p class="lead text-dark">Bird Net Service Pune provides Pigeon Netting Services with a reliable solution to keep pigeons and other birds away from your outdoor space, creating a peaceful environment without losing views or airflow.</p>
                     <p>Designed with durable materials, it offers adequate protection against nesting and droppings, enhancing both the safety and enjoyment of your balcony.</p>
                     
                     <div class="bg-light p-4 rounded mt-4">
@@ -136,58 +146,130 @@
                             <li class="col-md-6"><i class="fas fa-map-pin"></i> <strong>Installation:</strong> Anywhere in Pune</li>
                         </ul>
                     </div>
-                    <div class="mt-4">
-                        <h5 class="fw-bold">Call Now for Free Inspection:</h5>
-                        <a href="tel:7972908465" class="h3 text-primary text-decoration-none fw-bold">7972908465</a>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="benefits" class="section-padding bg-light text-center">
+    <section id="why-choose-us" class="section-padding bg-light">
         <div class="container">
-            <h2 class="fw-bold mb-5">Benefits of Assembling Bird Net</h2>
-            <div class="row g-4">
-                <div class="col-md-3">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Choose RC Bird Net & Grill?</h2>
+                <p class="text-muted">Providing Pune's most reliable and professional netting solutions.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
                     <div class="card feature-card p-4">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2830/2830305.png" width="60" class="mx-auto mb-3" alt="Hygiene">
-                        <h5>Hygiene & Health</h5>
-                        <p class="small text-muted">Prevents bird droppings which carry harmful respiratory diseases.</p>
+                        <div class="choose-icon"><i class="fas fa-headset"></i></div>
+                        <h5>24x7 Services</h5>
+                        <p class="small text-muted">We are available 24 hours and 7 days a week to solve all your bird net service-related queries instantly.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card feature-card p-4">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2640/2640822.png" width="60" class="mx-auto mb-3" alt="Zero Obstruction">
-                        <h5>Clear Views</h5>
-                        <p class="small text-muted">Transparent nets ensure your view remains unobstructed and beautiful.</p>
+                        <div class="choose-icon"><i class="fas fa-gem"></i></div>
+                        <h5>Best Quality Materials</h5>
+                        <p class="small text-muted">We use only premium, UV-stabilized, and durable materials to ensure long-lasting work.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card feature-card p-4">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1162/1162947.png" width="60" class="mx-auto mb-3" alt="Cost Effective">
-                        <h5>One-time Cost</h5>
-                        <p class="small text-muted">A long-lasting solution that saves recurring balcony cleaning costs.</p>
+                        <div class="choose-icon"><i class="fas fa-wallet"></i></div>
+                        <h5>Cost Effective</h5>
+                        <p class="small text-muted">Get high-quality bird netting and invisible grill solutions at the most competitive rates in Pune.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card feature-card p-4">
-                        <img src="https://cdn-icons-png.flaticon.com/512/483/483408.png" width="60" class="mx-auto mb-3" alt="Safe">
-                        <h5>Safety for Pets</h5>
-                        <p class="small text-muted">High-tensile strength prevents pets and birds from falling accidentally.</p>
+                        <div class="choose-icon"><i class="fas fa-award"></i></div>
+                        <h5>3 Year Warranty</h5>
+                        <p class="small text-muted">We provide a solid 3-year warranty on our services, so you can trust us with complete peace of mind.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <div class="choose-icon"><i class="fas fa-bolt"></i></div>
+                        <h5>Quick Support</h5>
+                        <p class="small text-muted">Our expert support team is always ready to troubleshoot and resolve your service requests immediately.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4">
+                        <div class="choose-icon"><i class="fas fa-smile-beam"></i></div>
+                        <h5>100% Satisfaction</h5>
+                        <p class="small text-muted">Customer satisfaction is our first priority. We don't consider the job done until you are happy.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section-padding">
+    <section id="reviews" class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What Our Customers Say</h2>
+                <p class="text-muted">Trusted by 1000+ happy homeowners across Pune.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Excellent work! The team installed the bird net in my Hinjewadi flat very professionally. High quality and neat work."</p>
+                        <span class="reviewer-name">Rahul Deshmukh</span>
+                        <span class="reviewer-loc">Hinjewadi, Pune</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"The invisible grill looks amazing and provides great safety for my kids. Very happy with RC Bird Net services."</p>
+                        <span class="reviewer-name">Sneha Patil</span>
+                        <span class="reviewer-loc">Wakad, Pune</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Reasonable price and very quick support. They came for a site visit on the same day I called. Highly recommended!"</p>
+                        <span class="reviewer-name">Amit Verma</span>
+                        <span class="reviewer-loc">Baner, Pune</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Finally no more pigeons on my balcony! The 3-year warranty gives a lot of confidence. Great service by the team."</p>
+                        <span class="reviewer-name">Priya Kulkarni</span>
+                        <span class="reviewer-loc">Kothrud, Pune</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Very polite staff and they used high-quality nylon nets. It's been 6 months and it still looks new."</p>
+                        <span class="reviewer-name">Vikram Singh</span>
+                        <span class="reviewer-loc">Viman Nagar, Pune</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Best bird netting service in Pune. They covered the entire society area perfectly. Very professional approach."</p>
+                        <span class="reviewer-name">Sandeep Mane</span>
+                        <span class="reviewer-loc">Magarpatta City, Pune</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <h2 class="fw-bold mb-4">Our Office Location</h2>
-                    <div class="location-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.03447396918!2d73.8629674!3d18.5247611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43100dd3f51!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="location-map shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.03447396985!2d73.78058204736173!3d18.52489042245366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67414521%3A0x1d051d305583bb0d!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="mt-4">
                         <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Address:</h5>
@@ -197,7 +279,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="bg-light p-5 rounded-4 shadow-sm">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border">
                         <h3 class="mb-4">Get a Free Site Visit</h3>
                         <form id="whatsappForm">
                             <div class="row g-3">
@@ -223,7 +305,7 @@
 
     <footer class="bg-dark text-white py-4 text-center">
         <div class="container">
-            <p class="mb-0">&copy; 2026 RC Bird net & Individual grill Pune. All Rights Reserved.</p>
+            <p class="mb-0">© 2026 RC Bird net & Individual grill Pune. All Rights Reserved.</p>
         </div>
     </footer>
 
